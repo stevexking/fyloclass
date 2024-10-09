@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+      />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="ind.css" />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="max-w-[1280px] mx-auto flex justify-between items-center py-6 px-4"
+    >
+      <img src="images/logo.svg" class="w-[100px]" />
+      <nav>
+        <a href="#" class="ml-6">Features</a>
+        <a href="#" class="ml-6">Team</a>
+        <a href="#" class="ml-6">Sign In</a>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="max-w-[1280px] mx-auto py-6 px-4 md:flex flex-row-reverse justify-between items-center"
+      >
+        <div class="md:w-[50%] lg:w-[55%] ">
+          <img src="images/illustration-1.svg" class="w-full h-full"/>
+        </div>
+
+        <div class="md:w-[45%] mt-12 text-center md:text-start px-3">
+          <h1 class="text-3xl  md:text-2xl lg:text-3xl mb-6 font-semibold">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p>
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <div class="mt-8 px-6 md:px-0 md:flex gap-4">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="border border-black w-full p-3 md:p-2 lg:p-3"
+            />
+
+            <button
+              class="text-white bg-blue-700 p-3 mt-4 md:mt-0 w-full md:w-[50%] md:p-2 lg:p-3"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-cover mt-16 py-6 px-4">
+        <div class="max-w-[1280px] mx-auto py-6 px-4 md:flex flex-row-reverse items-center justify-between">
+          <div class="md:w-[50%]">
+            <img src="images/illustration-2.svg" />
+          </div>
+          <div class="mt-12 md:w-[45%]">
+            <h1 class="text-xl font-semibold text-center md:text-start">Stay productive, wherever you are</h1>
+            <p class="mt-4">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="mt-4">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <div class="flex mt-4 gap-1 border-b border-green-400 w-[170px] mx-auto md:ml-0">
+              <a href="#">See how Fylo works</a>
+              <img src="images/icon-arrow.svg" />
+            </div>
+            <div class="mt-8 rounded-lg shadow-lg bg-white p-6 lg:w-[350px]">
+              <img src="./images/icon-quotes.svg" alt="">
+              <p class="mt-2 text-sm">Fylo has improved our team productivity by an
+                order of magnitude. Since making the switch our team has become a well-oiled
+                collaboration machine.</p>
+                <div class="mt-2 flex gap-2 items-center">
+                  <img src="./images/avatar-testimonial.jpg" class="w-[45px] h-[45px] rounded-full"/>
+                  <div>
+                    <h1 class="text-sm font-bold mb-0">Kyle Burton</h1>
+                    <p class="text-sm">Founder & CEO, Huddle</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-blue-800 px-4">
+        <div class="max-w-[1280px] mx-auto py-6 px-4 md:flex items-center justify-between">
+          <div class="text-white text-center px-4 md:w-[45%] md:text-start px-0">
+            <h1 class="text-xl font-semibold mb-4">Get early access today</h1>
+            <p>It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team would be
+              happy to help you.</p>
+          </div>
+
+          <div class="mt-8 px-6 md:mt-0 md:-0">
+            <input placeholder="email@example.com" type="email" class="border border-black w-full p-3 md:mb-4">
+             <button class="text-white bg-blue-700 p-3 mt-4 md:mt-0 w-full md:w-[50%]">Get Started for Free</button>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-blue-900 py-16 px-4">
+        <div class="max-w-[1280px] mx-auto px-4">
+          <img src="./images/logo.svg" class="w-[100px]"/>
+          <div class="mt-6 md:grid grid-cols-12">
+            <div class="mb-8 col-span-4">
+            <div class="flex items-center gap-4 text-white">
+              <img src="./images/icon-phone.svg" alt="">
+              <span>Phone: +1-543-123-4567</span>
+            </div>
+
+
+            <div class="flex items-center gap-4 text-white mt-4">
+              <img src="./images/icon-email.svg" alt="">
+              <span>example@fylo.com</span>
+            </div>
+          </div>
+          <div class="text-white flex flex-col gap-4 col-span-2">
+            <a href="#">About us</a>
+            <a href="#">jobs</a>
+            <a href="#">press</a>
+            <a href="#">blog</a>
+          </div>
+            <div class="text-white flex flex-col gap-4 mb-8 col-span-2">
+              <a href="#">contact us</a>
+              <a href="#">Terms</a>
+              <a href="#">Privacy</a>
+          </div>
+          <div class="text-white flex gap-4 justify-center md:justify-start col-span-4">
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-twitter text-xl"></i>
+            <i class="fa-brands fa-instagram text-xl"></i>
+          </div>
+
+        </div>
+      </footer>
+
+
+
+
+
+
+    </main>
+
+    Get Started See how Fylo works  Kyle Burton Founder & CEO, Huddle Get early access
+    today It only takes a minute to sign up and our free starter tier is
+    extremely generous. If you have any questions, our support team would be
+    happy to help you. Get Started For Free Phone: +1-543-123-4567
+    example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
